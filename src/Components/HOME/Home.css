@@ -1,0 +1,19 @@
+.Home-container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.courses-table{
+    width: 900px;
+    font-size: larger;
+    
+}
+.courses-table thead th{
+    padding: 20px;
+}
+
+.courses-table tbody tr td{
+    padding: 20px;
+}

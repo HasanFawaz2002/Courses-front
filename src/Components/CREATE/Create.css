@@ -1,0 +1,31 @@
+.create-form{
+    display: grid;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.create-form-container{
+    display: grid;
+    padding: 20px;
+}
+
+.create-form label{
+    font-size: larger;
+}
+
+.create-form input{
+    font-size: larger;
+}
+
+.create-form button{
+    background-color: green;
+    font-size: large;
+    padding: 5px;
+    color: white;
+    border-radius: 10px;
+}
+
+.error{
+    color: red;
+}
