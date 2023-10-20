@@ -30,6 +30,7 @@ function Home() {
 
     if (newIdToken) {
       setIdToken(newIdToken);
+      console.log('Id Token:', idToken);
       localStorage.setItem('id_token', newIdToken);
       console.log('ID Token:', newIdToken);
     }
