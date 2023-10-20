@@ -7,8 +7,16 @@
 .navbar ul {
     display: flex;
     justify-content: space-between;
-    width: 200px;
+    width: 500px;
 }
 .navbar ul li{
     list-style: none;
+}
+.navbar ul li button{
+    padding: 5px;
+    background-color: aquamarine;
+    color: black;
+    border-radius: 10px;
+    border: transparent;
+    font-size: larger;
 }

@@ -29,6 +29,8 @@ function Create() {
     });
   };
 
+  const accessToken = localStorage.getItem('access_token');
+
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -37,7 +39,13 @@ function Create() {
 
     if (isFormValid) {
       
-      axios.post('https://bi4fbspng4.execute-api.us-east-1.amazonaws.com/dev/createCourse', formData)
+      axios.post('https://bi4fbspng4.execute-api.us-east-1.amazonaws.com/dev/createCourse', formData,
+      {
+        headers: {
+          Authorization: `Bearer ${accessToken}`,
+        },
+      }
+      )
         .then((response) => {
           console.log('Course created successfully:', response.data);
           window.location.reload();

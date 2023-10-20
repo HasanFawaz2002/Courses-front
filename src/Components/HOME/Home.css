@@ -17,3 +17,22 @@
 .courses-table tbody tr td{
     padding: 20px;
 }
+
+.edit{
+    background-color: green;
+    width: 30%;
+    margin: 5px;
+    padding: 5px;
+    border: transparent;
+    border-radius: 5px;
+    color: white;
+}
+.delete{
+    background-color: red;
+    width: 30%;
+    margin: 5px;
+    padding: 5px;
+    border: transparent;
+    border-radius: 5px;
+    color: white;
+}
