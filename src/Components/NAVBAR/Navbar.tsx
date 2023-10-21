@@ -8,7 +8,7 @@ function Navbar() {
 
   
   const signup = () => {
-    const url = 'https://my-course.auth.us-east-1.amazoncognito.com/login?client_id=4kutvm6dnl78huuir2fstb7agn&response_type=token&scope=email+openid+phone&redirect_uri=http%3A%2F%2Flocalhost%3A5174%2F&errorMessage=Something%20went%20wrong.%20Please%20try%20again.';
+    const url = 'https://my-course.auth.us-east-1.amazoncognito.com/login?client_id=4kutvm6dnl78huuir2fstb7agn&response_type=token&scope=email+openid+phone&redirect_uri=https%3A%2F%2Fmaster.d1xdld4oro8y01.amplifyapp.com%2F&errorMessage=Something%20went%20wrong.%20Please%20try%20again.';
     window.open(url, '_blank');
   }
 
