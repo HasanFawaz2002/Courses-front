@@ -1,5 +1,6 @@
 import './Navbar.css';
 import { useNavigate } from 'react-router-dom';
+import logo from '../../image/logo1.png'
 
 function Navbar() {
 
@@ -7,7 +8,7 @@ function Navbar() {
 
   
   const signup = () => {
-    const url = 'https://my-course.auth.us-east-1.amazoncognito.com/login?client_id=4kutvm6dnl78huuir2fstb7agn&response_type=token&scope=email+openid+phone&redirect_uri=http%3A%2F%2Flocalhost%3A5173%2F';
+    const url = 'https://my-course.auth.us-east-1.amazoncognito.com/login?client_id=4kutvm6dnl78huuir2fstb7agn&response_type=token&scope=email+openid+phone&redirect_uri=http%3A%2F%2Flocalhost%3A5174%2F&errorMessage=Something%20went%20wrong.%20Please%20try%20again.';
     window.open(url, '_blank');
   }
 
@@ -30,7 +31,10 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <div>Logo</div>
+      <div className='logo-container'>
+        <div className='logo'><img src={logo} alt="" /></div>
+        <h2>Zidyia</h2>
+      </div>
 
       <ul>
         <li><button onClick={home}>Home</button></li>

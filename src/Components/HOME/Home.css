@@ -6,7 +6,7 @@
 }
 
 .courses-table{
-    width: 900px;
+    width: 1000px;
     font-size: larger;
     
 }
@@ -26,6 +26,13 @@
     border: transparent;
     border-radius: 5px;
     color: white;
+    transition: all ease 400ms;
+    cursor: pointer;
+}
+.edit:hover{
+    color: green;
+    background-color: transparent;
+    border: 1px solid green;
 }
 .delete{
     background-color: red;
@@ -35,4 +42,11 @@
     border: transparent;
     border-radius: 5px;
     color: white;
+    transition: all ease 400ms;
+    cursor: pointer;
+}
+.delete:hover{
+    color: red;
+    background-color: transparent;
+    border: 1px solid red;
 }

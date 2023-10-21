@@ -4,6 +4,19 @@
     margin: 20px;
     font-size: larger;
 }
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 100px;
+    height: 70px;
+}
+.logo img {
+    width: 100%;
+    height: 100%;
+}
 .navbar ul {
     display: flex;
     justify-content: space-between;
@@ -15,8 +28,18 @@
 .navbar ul li button{
     padding: 5px;
     background-color: aquamarine;
-    color: black;
+    color: white;
     border-radius: 10px;
     border: transparent;
     font-size: larger;
+    cursor: pointer;
+    transition: all ease 400ms;
+}
+.navbar ul li button:hover{
+color: aquamarine;
+background-color: transparent;
+border: 1px solid aquamarine;
+}
+.navbar ul li button:active{
+    transform: scale(1.1);
 }
