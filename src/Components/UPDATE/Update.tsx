@@ -16,7 +16,7 @@ function Update() {
 
   useEffect(() => {
     if (accessToken) {
-      const apiUrl = `https://bi4fbspng4.execute-api.us-east-1.amazonaws.com/dev/getCourseById/${CourseID}`;
+      const apiUrl = `https://9vcnn9imyb.execute-api.us-east-1.amazonaws.com/dev/getCourseById/${CourseID}`;
 
       axios
         .get(apiUrl)
@@ -42,7 +42,7 @@ function Update() {
     e.preventDefault();
 
     if (accessToken) {
-      const apiUrl = `https://bi4fbspng4.execute-api.us-east-1.amazonaws.com/dev/updateCourseById/${CourseID}`;
+      const apiUrl = `https://9vcnn9imyb.execute-api.us-east-1.amazonaws.com/dev/updateCourseById/${CourseID}`;
 
       axios
         .put(apiUrl, course , {

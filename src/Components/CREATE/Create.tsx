@@ -39,7 +39,7 @@ function Create() {
 
     if (isFormValid) {
       
-      axios.post('https://bi4fbspng4.execute-api.us-east-1.amazonaws.com/dev/createCourse', formData,
+      axios.post('https://9vcnn9imyb.execute-api.us-east-1.amazonaws.com/dev/createCourse', formData,
       {
         headers: {
           Authorization: `Bearer ${accessToken}`,

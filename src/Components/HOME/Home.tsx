@@ -38,7 +38,7 @@ function Home() {
 
   useEffect(() => {
     if (accessToken) {
-      const apiUrl = 'https://bi4fbspng4.execute-api.us-east-1.amazonaws.com/dev/getAllCourses';
+      const apiUrl = 'https://9vcnn9imyb.execute-api.us-east-1.amazonaws.com/dev/getAllCourses';
 
       axios
         .get(apiUrl, {
@@ -75,7 +75,7 @@ function Home() {
 
   const handleDelete = (CourseID: string) => {
     
-    const deleteUrl = `https://bi4fbspng4.execute-api.us-east-1.amazonaws.com/dev/deleteCourseById/${CourseID}`;
+    const deleteUrl = `https://9vcnn9imyb.execute-api.us-east-1.amazonaws.com/dev/deleteCourseById/${CourseID}`;
     axios
       .delete(deleteUrl, {
         headers: {
