@@ -29,6 +29,14 @@ function Navbar() {
     navigate('/');
   }
 
+  const Users = () => {
+    navigate('/users');
+  }
+
+  const createUsers = () => {
+    navigate('/createUser')
+  }
+
   return (
     <nav className="navbar">
       <div className='logo-container'>
@@ -38,6 +46,8 @@ function Navbar() {
 
       <ul>
         <li><button onClick={home}>Home</button></li>
+        <li><button onClick={Users}>Users</button></li>
+        <li><button onClick={createUsers}>Create Users</button></li>
         <li><button onClick={create}>Create</button></li>
         <li><button onClick={signup}>SignUp</button></li>
 

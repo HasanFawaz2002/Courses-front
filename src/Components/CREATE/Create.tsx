@@ -34,6 +34,11 @@ function Create() {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
+    if (!accessToken) {
+      console.error('Access token does not exist.');
+      return;
+  }
+
     
     const isFormValid = validateForm();
 
